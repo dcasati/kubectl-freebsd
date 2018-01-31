@@ -1,5 +1,15 @@
 # kubectl-freebsd - How to build and run kubectl on FreeBSD
 
+# TLDR - The easy way
+
+```bash
+$ fetch https://github.com/dcasati/kubectl-freebsd/releases/download/release-1.9/kubectl
+$ chmod +x kubectl
+$ sudo mv kubectl /usr/local/sbin
+```
+
+# Manual build process
+
 ## Prerequisites
 * FreeBSD 11.1 (confirmed to work)
 * The Kubernetes source code
