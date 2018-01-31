@@ -26,9 +26,9 @@ $ cd go/src/k8s.io/kubernetes/cmd/kubectl
 Finally build and install kubectl
 
 ```bash
-$ cd cmd/kubectl
 $ go install .
 ```
+
 `kubectl` is now availabe at `$GOPATH/bin`.
 
 Move that to `/usr/local/sbin`
