@@ -1,7 +1,6 @@
 # kubectl-freebsd - How to build and run kubectl on FreeBSD
 
 ## Prerequisites
-
 * FreeBSD 11.1 (confirmed to work)
 * The Kubernetes source code
 * go 1.9.2
@@ -9,7 +8,6 @@
 * mercurial 4.4.2
 
 ## Building Kubectl
-
 Install the required packages
 
 ```bash
@@ -31,7 +29,7 @@ godep: [WARNING]: may not function correctly. You are probably outside of your $
 godep: [WARNING]:       Current Directory: /usr/home/dcasati/go/src/k8s.io/kubernetes
 godep: [WARNING]:       $GOPATH: /home/dcasati/go/
 ```
-
+## Install the kubectl binary
 Finally install kubectl
 
 ```bash
