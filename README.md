@@ -29,7 +29,7 @@ godep: [WARNING]: may not function correctly. You are probably outside of your $
 godep: [WARNING]:       Current Directory: /usr/home/dcasati/go/src/k8s.io/kubernetes
 godep: [WARNING]:       $GOPATH: /home/dcasati/go/
 ```
-## Install the kubectl binary
+## Installing the kubectl binary
 Finally install kubectl
 
 ```bash
@@ -43,7 +43,7 @@ Move that to `/usr/local/sbin`
 ```bash
 sudo mv $GOPATH/bin/kubectl /usr/local/sbin
 ```
-# Testing
+## Testing
 
 To test, run some bsic `kubectl` commands.
 
@@ -77,7 +77,7 @@ aks-nodepool1-97650676-1   Ready     agent     19d       v1.8.2
 aks-nodepool1-97650676-3   Ready     agent     19d       v1.8.2
 ```
 
-## Install Azure CLI [Optional for testing]
+## Installing Azure CLI [Optional for testing]
 
 Install python
 
@@ -95,7 +95,7 @@ Finally install Azure CLI
 $ curl -L https://aka.ms/InstallAzureCli | bash
 ```
 
-# FAQ
+## FAQ
 
 1. Question: Editing a resource fails with `Error: /var/tmp/vi.recover/: Permission denied.`
 > Answer: This seems to be known and easy to fix. Change your KUBE_EDITOR variable to `vim` or another 
