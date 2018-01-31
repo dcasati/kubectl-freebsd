@@ -17,7 +17,7 @@ $ sudo pkg install go godep mercurial
 Fetch the Kubernetes source code
 
 ```bash
-$ go get -d k8s.io/kubernetes
+$ go get -v -d k8s.io/kubernetes
 ```
 
 Next, `cd` to the kubernetes directory and run `godep restore` to fetch all dependencies
