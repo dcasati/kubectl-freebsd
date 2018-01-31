@@ -95,3 +95,12 @@ Finally install Azure CLI
 $ curl -L https://aka.ms/InstallAzureCli | bash
 ```
 
+# FAQ
+
+1. Question: Editing a resource fails with `Error: /var/tmp/vi.recover/: Permission denied.`
+> Answer: This seems to be known and easy to fix. Change your KUBE_EDITOR variable to `vim` or another 
+editor of choice.
+
+```bash
+export KUBE_EDITOR="vim"
+```
