@@ -23,7 +23,7 @@ $ go get -d k8s.io/kubernetes
 Next, `cd` to the kubernetes directory and run `godep restore` to fetch all dependencies
 ```bash
 $ cd go/src/k8s.io/kubernetes/
-$ godep restore
+$ godep restore -v
 godep: [WARNING]: godep should only be used inside a valid go package directory and
 godep: [WARNING]: may not function correctly. You are probably outside of your $GOPATH.
 godep: [WARNING]:       Current Directory: /usr/home/dcasati/go/src/k8s.io/kubernetes
