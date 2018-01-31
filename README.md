@@ -3,15 +3,13 @@
 ## Prerequisites
 * FreeBSD 11.1 (confirmed to work)
 * The Kubernetes source code
-* go 1.9.2
-* godep v79
-* mercurial 4.4.2
+* golang 1.9.2
 
 ## Building Kubectl
 Install the required packages
 
 ```bash
-$ sudo pkg install go godep mercurial
+$ sudo pkg install go
 ```
 
 Fetch the Kubernetes source code
@@ -20,17 +18,12 @@ Fetch the Kubernetes source code
 $ go get -v -d k8s.io/kubernetes
 ```
 
-Next, `cd` to the kubernetes directory and run `godep restore` to fetch all dependencies
+Next, `cd` to the kubernetes directory and install kubectl
 ```bash
-$ cd go/src/k8s.io/kubernetes/
-$ godep restore -v
-godep: [WARNING]: godep should only be used inside a valid go package directory and
-godep: [WARNING]: may not function correctly. You are probably outside of your $GOPATH.
-godep: [WARNING]:       Current Directory: /usr/home/dcasati/go/src/k8s.io/kubernetes
-godep: [WARNING]:       $GOPATH: /home/dcasati/go/
+$ cd go/src/k8s.io/kubernetes/cmd/kubectl
 ```
-## Installing the kubectl binary
-Finally install kubectl
+
+Finally build and install kubectl
 
 ```bash
 $ cd cmd/kubectl
@@ -45,7 +38,7 @@ sudo mv $GOPATH/bin/kubectl /usr/local/sbin
 ```
 ## Testing
 
-To test, run some bsic `kubectl` commands.
+To test, run some basic `kubectl` commands.
 
 Checking the current version:
 
