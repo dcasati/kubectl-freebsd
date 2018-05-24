@@ -19,7 +19,7 @@ $ sudo mv kubectl /usr/local/sbin
 Install the required packages
 
 ```bash
-$ sudo pkg install go
+$ sudo pkg install go git
 ```
 
 Fetch the Kubernetes source code
